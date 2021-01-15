@@ -195,40 +195,66 @@
             </div>
         </div>
     </section>
-    <script>
-        var link = document.getElementsByName('links')
-        var i;
-        for (i = 0; i < link.length; i++) {
-            link[i].addEventListener("click", function() {
-                /* Toggle between adding and removing the "active" class,
-                to highlight the button that controls the panel */
-                this.classList.toggle("active");
-                /* Toggle between hiding and showing the active panel */
-                var panel = this.nextElementSibling;
-                if (panel.style.display === "block") {
-                    panel.style.display = "none";
-                } else {
-                    panel.style.display = "block";
-                }
-            });
-        }
-    </script>
 
-    <section id="courses" class="wrapper style2" style="margin: -2vw 0 -4vw 0;">
-        <div class="inner">
+    <div>
+    <button name="dr" style="width: 100%; border: none; outline: none;">
+        <section id="courses" class="wrapper style2">
+            <div class="inner" style=" box-shadow: -.3250rem .3250rem .625rem 0 grey;">
+                <div>
+                    <div class="box">
+                        <div class="content">
+                            <header class="align-center">
+                                <h2>Research Articles</h2>
+                                <h4>Click here to find some Research Articles, and related links</h4><br>
+                            </header>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </button>
+        <div style="display: none; margin-top: -2vw;">
+        <section id="courses" class="wrapper style2">
+            <div class="inner">
+                <div>
+                    <div class="box">
+                        <div class="content">
+                            <header class="align-center">
+                                <h2>Akṣara</h2>
+                                <h4>R. N. Iyengar</h4><br>
+                            </header>
+                            <div class="image fit">
+                                <iframe src="https://www.dropbox.com/s/vxa0a4j8axpj5tn/Akara_the_Basic_Unit_of_Time_Measure_in.pdf?raw=1"></iframe>
+                            </div>
+                            <p>
+                                <li>The Basic Unit of Time Measure in Ancient India.</li>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </div>
+    </div>
+    
+    <div>
+    <button name="dr" style="width: 100%; border: none; outline: none; ">
+    <section id="courses" class="wrapper style2">
+        <div class="inner" style=" box-shadow: -.3250rem .3250rem .625rem 0 grey;">
             <div>
                 <div class="box">
                     <div class="content">
                         <header class="align-center">
-                            <h2>Detailed Resources</h2>
-                            <h4>Scroll below to find some detailed resources, and related links</h4><br>
+                            <h2>Sanskrit and Tech</h2>
+                            <h4>Click here to find some applications of technology in Sanskrit, and related links</h4><br>
                         </header>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
+    </button>
+    <div style="display: none; margin-top: -2vw;">
     <section id="courses" class="wrapper style2">
         <div class="inner">
             <div>
@@ -481,6 +507,53 @@
             </div>
         </div>
     </section>
+    </div>
+</div>
+
+    <script>
+        var link = document.getElementsByName('links')
+        var i;
+        for (i = 0; i < link.length; i++) {
+            link[i].addEventListener("click", function() {
+                /* Toggle between adding and removing the "active" class,
+                to highlight the button that controls the panel */
+                this.classList.toggle("active");
+                /* Toggle between hiding and showing the active panel */
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                }
+                else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+    <script>
+        var link = document.getElementsByName('dr')
+        var i;
+        for (i = 0; i < link.length; i++) {
+            link[i].addEventListener("click", function() {
+                /* Toggle between adding and removing the "active" class,
+                to highlight the button that controls the panel */
+                this.classList.toggle("active");
+                /* Toggle between hiding and showing the active panel */
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                    this.style.zIndex = "1";
+                    this.style.position = "relative"; 
+                }
+                else {
+                    panel.style.display = "block";
+                    this.style.position = "sticky";
+                    this.style.position = "-webkit-sticky"; 
+                    this.style.top = "0";
+                    this.style.zIndex = "9999";
+                }
+            });
+        }
+    </script>
 
 
     <!-- Footer -->
