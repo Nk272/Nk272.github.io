@@ -881,11 +881,13 @@ footer h1{
         	}
         	}
 
-          #le_sanskrit h1{
+          #le_sanskrit{
+            background-color: #f2f2f2;
+		  }
+			#le_sanskrit h1{
             padding:3rem 0 3rem 0;
             text-align: center;
             color: #000;
-            background-color: #f2f2f2;
           }
 
           @media (max-width: 450px){
