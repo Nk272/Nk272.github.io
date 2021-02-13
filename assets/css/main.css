@@ -816,6 +816,19 @@ footer h1{
 	padding: 10px 0;
 	text-align: center;
   }
+  @media screen and (min-width: 736px){
+	  .contact-section {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	  }
+	  .contact-section > div{
+		  margin: auto 0 auto 0;
+	  }
+	  .contact-section > div+div{
+		  margin-left: 5vw;
+	  }
+  }
   
   .inner-width{
 	
