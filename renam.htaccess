@@ -1,3 +1,1 @@
-RewriteEngine On
-RewriteRule subhashitam.html
-courses.html [R=301]
+redirect 301 /subhashitam.html https://nk272.github.io/courses.html
