@@ -101,7 +101,7 @@ function nicebut(elnam){
 function simp(elnam,targ){
             var acc = document.getElementById(elnam);
             acc.addEventListener("click", function() {
-                var panel = targ;
+                var panel = document.getElementById(targ);
                 if (panel.style.display === "block") {
                     panel.style.display = "none";
                 }
