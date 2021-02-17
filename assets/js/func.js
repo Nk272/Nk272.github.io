@@ -58,11 +58,12 @@ function sticman(elnam){
         for (i = 0; i < acc.length; i++) {
             acc[i].addEventListener("click", function() {
                 var panel = this.nextElementSibling;
+                var top = (this.children[0].children[0].querySelector('a')) ? this.children[0].children[0].querySelector('a'):{};
                 if (panel.style.display === "block") {
                     panel.style.display = "none";
                     this.style.zIndex = "1";
                     this.style.position = "relative";
-                    this.children[0].children[0].querySelector('a').innerHTML = "Click here for more info";
+                    top.innerHTML = "Click here for more info";
                 }
                 else {
                     panel.style.display = "block";
@@ -70,7 +71,7 @@ function sticman(elnam){
                     this.style.position = "-webkit-sticky";
                     this.style.top = "0";
                     this.style.zIndex = "9999";
-                    this.children[0].children[0].querySelector('a').innerHTML = "Close";
+                    top.innerHTML = "Close";
                 }
             });
         }
