@@ -115,7 +115,7 @@ function simplist(elnam,targ){
         var i;
         for (i = 0; i < acc.length; i++) {
             acc[i].addEventListener("click", function() {
-                var panel = targ;
+                var panel = this.nextElementSibling;
                 if (panel.style.display === "block") {
                     panel.style.display = "none";
                 }
