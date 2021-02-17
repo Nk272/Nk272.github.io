@@ -110,7 +110,7 @@ function simp(elnam,targ){
             });
 }
 
-function simplist(elnam,targ){
+function simplist(elnam){
         var acc = document.getElementsByName(elnam);
         var i;
         for (i = 0; i < acc.length; i++) {
