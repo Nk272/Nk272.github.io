@@ -7,8 +7,8 @@
 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="keywords" content="sanskrit club IIT Roorkee iitr subhashitam samskritam">
-    <meta name="description" content="Subhashitam Samskritam courses organised by Sanskrit Club - IITR in collaboration with Samskrita Bharati">
+    <meta name="keywords" content="sanskrit club IIT Roorkee iitr subhashitam samskritam samsaadhanii computational">
+    <meta name="description" content="Courses organised by Sanskrit Club - IITR">
 
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
@@ -334,33 +334,8 @@
 
     <!-- Scripts -->
 
-    <script>
-        var acc = document.getElementsByName("course");
-        var i;
-        for (i = 0; i < acc.length; i++) {
-            acc[i].addEventListener("click", function() {
-                /* Toggle between adding and removing the "active" class,
-                to highlight the button that controls the panel */
-                this.classList.toggle("active");
-                /* Toggle between hiding and showing the active panel */
-                var panel = this.nextElementSibling;
-                if (panel.style.display === "block") {
-                    panel.style.display = "none";
-                    this.style.zIndex = "1";
-                    this.style.position = "relative";
-                    this.children[0].children[0].children[0].innerHTML = "Click here for more info";
-                }
-                else {
-                    panel.style.display = "block";
-                    this.style.position = "sticky";
-                    this.style.position = "-webkit-sticky";
-                    this.style.top = "0";
-                    this.style.zIndex = "9999";
-                    this.children[0].children[0].children[0].innerHTML = "Close";
-                }
-            });
-        }
-    </script>
+    <script src="./assets/js/func.js"></script>
+    <script>sticman('course');</script>
 
 </body>
 

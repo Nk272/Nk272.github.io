@@ -501,52 +501,6 @@
     </div>
 </div>
 
-    <script>
-        var link = document.getElementsByName('links')
-        var i;
-        for (i = 0; i < link.length; i++) {
-            link[i].addEventListener("click", function() {
-                /* Toggle between adding and removing the "active" class,
-                to highlight the button that controls the panel */
-                this.classList.toggle("active");
-                /* Toggle between hiding and showing the active panel */
-                var panel = this.nextElementSibling;
-                if (panel.style.display === "block") {
-                    panel.style.display = "none";
-                }
-                else {
-                    panel.style.display = "block";
-                }
-            });
-        }
-    </script>
-    <script>
-        var link = document.getElementsByName('dr')
-        var i;
-        for (i = 0; i < link.length; i++) {
-            link[i].addEventListener("click", function() {
-                /* Toggle between adding and removing the "active" class,
-                to highlight the button that controls the panel */
-                this.classList.toggle("active");
-                /* Toggle between hiding and showing the active panel */
-                var panel = this.nextElementSibling;
-                if (panel.style.display === "block") {
-                    panel.style.display = "none";
-                    this.style.zIndex = "1";
-                    this.style.position = "relative"; 
-                }
-                else {
-                    panel.style.display = "block";
-                    this.style.position = "sticky";
-                    this.style.position = "-webkit-sticky"; 
-                    this.style.top = "0";
-                    this.style.zIndex = "9999";
-                }
-            });
-        }
-    </script>
-
-
     <!-- Footer -->
     <footer id="footer" class="wrapper">
         <div class="contact-section">
@@ -577,6 +531,11 @@
     </footer>
 
     <!-- Scripts -->
+    <script src="./assets/js/func.js"></script>
+    <script>
+        sticman('dr')
+        simplist('links', this.nextElementSibling)
+    </script>
 
 </body>
 

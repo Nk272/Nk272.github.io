@@ -35,7 +35,7 @@
             font-size: 2em !important;
         }
         
-        #four+div {
+        [name=shloka]+div {
             display: none;
             overflow: hidden;
         }
@@ -122,7 +122,7 @@
         <h4>Come let's see some witty and thought provoking Subhashitas and their meanings.<br> Click on a shloka to read more about it, and to listen to its melody.</h4>
 
         <h3>Alliteration</h3>
-        <section id="four" class="wrapper style3">
+        <section name="shloka" class="wrapper style3">
             <div class="inner">
                 <header class="align-center">
                     <h2 style="color: #f2f2f2;">विभूषितानङ्गरिपूत्तमाङ्गा</br>
@@ -149,7 +149,7 @@
         </div>
 
         <h3>Contradictory Meaning</h3>
-        <section id="four" class="wrapper style3">
+        <section name="shloka" class="wrapper style3">
             <div class="inner">
                 <header class="align-center">
                     <h2 style="color: #f2f2f2;">केशवं पतितं दृष्ट्वा</br>
@@ -174,7 +174,7 @@
         </div>
 
         <h3>Verse from a sound</h3>
-        <section id="four" class="wrapper style3">
+        <section name="shloka" class="wrapper style3">
             <div class="inner">
                 <header class="align-center">
                     <h2 style="color: #f2f2f2;">राज्याभिषेके मदविह्वलायाः</br>
@@ -202,7 +202,7 @@
         </div>
 
         <h3>Synonyms</h3>
-        <section id="four" class="wrapper style3">
+        <section name="shloka" class="wrapper style3">
             <div class="inner">
                 <header class="align-center">
                     <h2 style="color: #f2f2f2;">अम्बा कुप्यति तात मूर्ध्नि विधृता गङ्गेयमुत्सृज्य ताम्</br>
@@ -231,7 +231,7 @@
         </div>
 
         <h3>First Shloka in History</h3>
-        <section id="four" class="wrapper style3">
+        <section name="shloka" class="wrapper style3">
             <div class="inner">
                 <header class="align-center">
                     <h2 style="color: #f2f2f2;">मा निषाद प्रतिष्ठां त्वम्</br>
@@ -258,7 +258,7 @@
         </div>
 
         <h3>Namo Buddhaay</h3>
-        <section id="four" class="wrapper style3">
+        <section name="shloka" class="wrapper style3">
             <div class="inner">
                 <header class="align-center">
                     <h2 style="color: #f2f2f2;">कलत्रं च पुत्रं च मित्रादि सर्वम्</br>
@@ -284,7 +284,7 @@
         </div>
 
         <!--<h3></h3>
-      <section id="four" class="wrapper style3">
+      <section name="shloka" class="wrapper style3">
         <div class="inner">
           <header class="align-center">
             <h2 style="color: #f2f2f2;">कस्यापि कोऽप्यतिशयोऽस्ति स तेन लोके</br>
@@ -412,32 +412,8 @@
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
 
-    <script>
-        var acc = document.getElementsByTagName("h2");
-        var i;
-
-        for (i = 0; i < acc.length; i++) {
-            acc[i].addEventListener("click", function() {
-                /* Toggle between adding and removing the "active" class,
-                to highlight the button that controls the panel */
-                this.classList.toggle("active");
-
-                /* Toggle between hiding and showing the active panel */
-                var panel = this.closest('section').nextElementSibling;
-                var arrow = this.lastChild;
-                if (panel.style.display === "block") {
-                    panel.style.display = "none";
-                    arrow.style.transform = 'rotate(45deg)';
-                    arrow.style.margin = '0 0 0 0';
-                    /*arrow.style.-webkit-transform = 'rotate(-135deg)';*/
-                } else {
-                    panel.style.display = "block";
-                    arrow.style.transform = 'rotate(-135deg)';
-                    arrow.style.margin = '1vw 0 0 0';
-                }
-            });
-        }
-    </script>
+    <script src="./assets/js/func.js"></script>
+    <script>nicebut('shloka')</script>
 
 </body>
 

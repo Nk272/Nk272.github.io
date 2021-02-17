@@ -204,10 +204,10 @@
                         <p>
                             <li>First activity of a series of activities planned after freshers of 2020-21 joined in Nov-end</li>
                             <li>Conducted between 3rd and 5th of December, 2020.</li>
-                            <li><a id="richaq" style="cursor: pointer;">These</a> participants made it to the next level!</li>
+                            <li><a id="richa" style="cursor: pointer;">These</a> participants made it to the next level!</li>
                         </p>
                         <div>
-                            <pre><p id="namesq" style="display: none;">        Atal Agrawal                Soumya Mishra
+                            <pre><p id="names" style="display: none;">        Atal Agrawal                Soumya Mishra
         Ayush Kumar Pandey          Rishabh Keshulal Lodha
         Sarthak Gupta               Chhavi Sood
         Anet Maria P                Abhishek Tiwari
@@ -229,23 +229,6 @@
         Devesh Yadav
         Pavan Rao</p></pre>
                         </div>
-                        <script>
-                            var richa = document.getElementById('richaq')
-                            richa.addEventListener("click", function() {
-                                /* Toggle between adding and removing the "active" class,
-                                to highlight the button that controls the panel */
-                                this.classList.toggle("active");
-
-                                /* Toggle between hiding and showing the active panel */
-                                var panel = document.getElementById('namesq')
-                                if (panel.style.display === "block") {
-                                    panel.style.display = "none";
-                                } else {
-                                    panel.style.display = "block";
-                                }
-                            });
-                        </script>
-
                     </div>
                 </div>
             </div>
@@ -391,6 +374,8 @@
     <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/func.js"></script>
+    <script>simp('richa', document.getElementById('names'))</script>
 
 </body>
 
